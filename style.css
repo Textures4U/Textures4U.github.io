@@ -66,6 +66,7 @@ body {
 }
 .tab-content {
   height: 47.5rem;
+  width: 50rem;
   position: absolute;
   z-index: 1;
   top: 2.75em;
