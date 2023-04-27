@@ -1,0 +1,138 @@
+
+body { 
+  height: 100%;
+  background: url(./img/Categories.png) fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 16px; 
+  font-family: 'Anton', sans-serif;
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.618em;
+} 
+
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+.wrapper {
+  max-width: 50rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.tabs {
+  position: relative;
+  margin: 3rem 0;
+  background: #1abc9c;
+  height: 14.75rem;
+}
+.tabs::before,
+.tabs::after {
+  content: "";
+  display: table;
+}
+.tabs::after {
+  clear: both;
+}
+.tab {
+  float: left;
+}
+.tab-switch {
+  display: none;
+}
+.tab-label {
+  position: relative;
+  display: block;
+  line-height: 2.75em;
+  height: 3em;
+  padding: 0 1.618em;
+  background: #414746;
+  border-right: 0.125rem solid #000000;
+  color: #fff;
+  cursor: pointer;
+  top: 0;
+  transition: all 0.25s;
+  font-family: 'Anton', sans-serif;
+}
+.tab-label:hover {
+  top: -0.25rem;
+  transition: top 0.25s;
+}
+.tab-content {
+  height: 47.5rem;
+  position: absolute;
+  z-index: 1;
+  top: 2.75em;
+  left: 0;
+  padding: 1.618rem;
+  background: #fff;
+  color: #2c3e50;
+  border-bottom: 0.25rem solid #bdc3c7;
+  opacity: 0;
+  transition: all 0.35s;
+}
+.tab-switch:checked + .tab-label {
+  background: #fff;
+  color: #2c3e50;
+  border-bottom: 0;
+  border-right: 0.125rem solid #fff;
+  transition: all 0.35s;
+  z-index: 1;
+  top: -0.0625rem;
+}
+.tab-switch:checked + label + .tab-content {
+  z-index: 2;
+  opacity: 1;
+  transition: all 0.35s;
+}
+
+h2{
+  text-align: center;
+  padding: 8%;
+}
+
+.collage{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.textures{
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.bottom-text{
+  font-size: 22px;
+  text-align: center;
+}
+
+.center{
+  text-align: center;
+}
+
+ul{
+  display: inline-block;
+  text-align: left;
+}
+
+.bottom-text-suggestions{
+  padding-left: auto;
+  text-align: center;
+  font-size: 22px;
+}
+
+.twitter-logo{
+  width: 30px;
+  height: auto;
+}
+
+.insta-logo{
+  width: 30px;
+  height: auto;
+}
